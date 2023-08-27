@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
-type DataProps =  {
+const Typewriter = ({ text, delay = 100, isLoop = false, loopDelay = 2000, textClassName = 'text-slate-700' }: {
     text: string | string[];
     delay?: number;
     isLoop?: boolean;
     loopDelay?: number;
     textClassName?: string;
-}
-const Typewriter = ({ text, delay = 100, isLoop = false, loopDelay = 2000, textClassName = 'text-slate-700' }: DataProps) => {
+}) => {
     const [currentText, setCurrentText] = useState('');
     const [currentIndex, setCurrentIndex] = useState(0);
 
