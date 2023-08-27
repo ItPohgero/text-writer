@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 interface DataProps {
   text?: string | string[]
@@ -8,11 +8,17 @@ interface DataProps {
   textClassName?: string
 }
 
-const Typewriter = ({ text = 'itpohgero', delay = 100, isLoop = false, loopDelay = 2000 }: DataProps) => {
-  const [currentText, setCurrentText] = React.useState<string>('')
-  const [currentIndex, setCurrentIndex] = React.useState<number>(0)
+const Typewriter: React.FC<DataProps> = ({
+  text = 'itpohgero',
+  delay = 100,
+  isLoop = false,
+  loopDelay = 2000,
+  textClassName = '',
+}) => {
+  const [currentText, setCurrentText] = useState<string>('')
+  const [currentIndex, setCurrentIndex] = useState<number>(0)
 
-  React.useEffect(() => {
+  useEffect(() => {
     const textArray = Array.isArray(text) ? text : [text]
     const currentTextLength = currentText.length
 
@@ -33,10 +39,13 @@ const Typewriter = ({ text = 'itpohgero', delay = 100, isLoop = false, loopDelay
         setCurrentText('')
       }
     }
-    return () => {}
+
+    return () => {
+      // Cleanup if needed
+    }
   }, [currentIndex, currentText, delay, isLoop, loopDelay, text])
 
-  return currentText
+  return <span className={textClassName}>{currentText}</span>
 }
 
 export default Typewriter
