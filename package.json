@@ -1,13 +1,12 @@
 {
   "name": "react-text-writer",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "package react animation text writer by itpohgero",
-  "main": "index.js",
-  "directories": {
-    "example": "example"
-  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
   },
   "repository": {
     "type": "git",
@@ -33,13 +32,9 @@
   },
   "homepage": "https://github.com/ItPohgero/text-writer#readme",
   "dependencies": {
-    "@types/react": "^18.2.21",
+    "@types/node": "^20.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "ts-loader": "^9.4.4",
-    "typescript": "^5.2.2",
-    "webpack": "^5.88.2",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^4.15.1"
+    "typescript": "^5.2.2"
   }
 }
