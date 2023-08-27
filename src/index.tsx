@@ -36,9 +36,9 @@ const Typewriter: React.FC<DataProps> = ({
         }, loopDelay)
       } else {
         setTimeout(() => {
-          setCurrentIndex(prevIndex => prevIndex + 1);
-          setCurrentText('');
-        }, delay);
+          setCurrentIndex((prevIndex) => prevIndex + 1)
+          setCurrentText('')
+        }, delay)
       }
     }
 

@@ -23,8 +23,10 @@ var Typewriter = function (_a) {
                 }, loopDelay);
             }
             else {
-                setCurrentIndex(function (prevIndex) { return prevIndex + 1; });
-                setCurrentText('');
+                setTimeout(function () {
+                    setCurrentIndex(function (prevIndex) { return prevIndex + 1; });
+                    setCurrentText('');
+                }, delay);
             }
         }
         return function () {
