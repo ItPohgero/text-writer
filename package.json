@@ -1,8 +1,8 @@
 {
   "name": "react-text-writer",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "package react animation text writer by itpohgero",
-  "main": "index.tsx",
+  "main": "index.js",
   "directories": {
     "example": "example"
   },

@@ -6,6 +6,6 @@
     "strict": true,
     "esModuleInterop": true
   },
-  "include": ["index.tsx"], // Include your source files
+  "include": ["Typewriter.tsx"], // Include your source files
   "exclude": ["node_modules"]
 }
