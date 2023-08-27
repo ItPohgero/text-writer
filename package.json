@@ -1,6 +1,6 @@
 {
-  "name": "text-writer",
-  "version": "1.0.0",
+  "name": "react-text-writer",
+  "version": "1.0.2",
   "description": "package react animation text writer by itpohgero",
   "main": "index.tsx",
   "directories": {
@@ -8,6 +8,12 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "compilerOptions": {
+    "target": "es6",
+    "module": "esnext",
+    "jsx": "react",
+    "strict": true
   },
   "repository": {
     "type": "git",
