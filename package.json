@@ -1,0 +1,39 @@
+{
+  "name": "text-writer",
+  "version": "1.0.0",
+  "description": "package react animation text writer by itpohgero",
+  "main": "index.tsx",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ItPohgero/text-writer.git"
+  },
+  "keywords": [
+    "itpohgero",
+    "text-writer",
+    "react",
+    "text",
+    "writer",
+    "wahyu",
+    "agus",
+    "arifin",
+    "react",
+    "animation",
+    "text"
+  ],
+  "author": "wahyu agus arifin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ItPohgero/text-writer/issues"
+  },
+  "homepage": "https://github.com/ItPohgero/text-writer#readme",
+  "dependencies": {
+    "@types/react": "^18.2.21",
+    "react": "^18.2.0"
+  }
+}
