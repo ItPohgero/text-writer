@@ -8,9 +8,15 @@ interface DataProps {
     textClassName?: string
 }
 
-const Typewriter = ({ text, delay = 100, isLoop = false, loopDelay = 2000, textClassName = 'text-slate-700' }: DataProps) => {
-    const [currentText, setCurrentText] = useState('');
-    const [currentIndex, setCurrentIndex] = useState(0);
+const Typewriter = ({
+    text,
+    delay = 100,
+    isLoop = false,
+    loopDelay = 2000,
+    textClassName = 'text-slate-700'
+}: DataProps) => {
+    const [currentText, setCurrentText] = useState<string>('');
+    const [currentIndex, setCurrentIndex] = useState<number>(0);
 
     useEffect(() => {
         const textArray = Array.isArray(text) ? text : [text];
