@@ -6,7 +6,7 @@ import 'jest-canvas-mock'
 import { Typewriter } from '../src'
 
 describe('Common render', () => {
-    it('renders without crashing', () => {
-        render(<Typewriter />)
-    })
+  it('renders without crashing', () => {
+    render(<Typewriter />)
+  })
 })
