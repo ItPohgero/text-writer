@@ -25,7 +25,7 @@ import Typewriter from 'react-text-writer'
         "Kata kedua"
         ]
     }
-    delay={100}
+    speed={100}
     isLoop
     loopDelay={4000}
     className="text-slate-800"
