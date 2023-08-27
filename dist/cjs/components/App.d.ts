@@ -1,3 +1,4 @@
+import React from 'react';
 interface DataProps {
     text?: string | string[];
     delay?: number;
@@ -5,5 +6,5 @@ interface DataProps {
     loopDelay?: number;
     textClassName?: string;
 }
-declare const Typewriter: ({ text, delay, isLoop, loopDelay }: DataProps) => string;
+declare const Typewriter: React.FC<DataProps>;
 export default Typewriter;
