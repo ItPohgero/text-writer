@@ -1,1 +1,1 @@
-# text-writer
+# Package react text writer
