@@ -26,7 +26,7 @@ var Typewriter = function (_a) {
                 setTimeout(function () {
                     setCurrentIndex(function (prevIndex) { return prevIndex + 1; });
                     setCurrentText('');
-                }, delay);
+                }, loopDelay);
             }
         }
         return function () {
