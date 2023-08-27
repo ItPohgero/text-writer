@@ -3,7 +3,7 @@ exports.__esModule = true;
 var tslib_1 = require("tslib");
 var react_1 = tslib_1.__importStar(require("react"));
 var Typewriter = function (_a) {
-    var _b = _a.text, text = _b === void 0 ? 'itpohgero' : _b, _c = _a.delay, delay = _c === void 0 ? 100 : _c, _d = _a.isLoop, isLoop = _d === void 0 ? false : _d, _e = _a.loopDelay, loopDelay = _e === void 0 ? 2000 : _e, _f = _a.textClassName, textClassName = _f === void 0 ? '' : _f;
+    var _b = _a.text, text = _b === void 0 ? 'itpohgero' : _b, _c = _a.speed, speed = _c === void 0 ? 100 : _c, _d = _a.isLoop, isLoop = _d === void 0 ? false : _d, _e = _a.loopDelay, loopDelay = _e === void 0 ? 2000 : _e, _f = _a.textClassName, textClassName = _f === void 0 ? '' : _f;
     var _g = (0, react_1.useState)(''), currentText = _g[0], setCurrentText = _g[1];
     var _h = (0, react_1.useState)(0), currentIndex = _h[0], setCurrentIndex = _h[1];
     (0, react_1.useEffect)(function () {
@@ -13,7 +13,7 @@ var Typewriter = function (_a) {
             if (currentTextLength < textArray[currentIndex].length) {
                 var timeout_1 = setTimeout(function () {
                     setCurrentText(function (prevText) { return prevText + textArray[currentIndex][currentTextLength]; });
-                }, delay);
+                }, speed);
                 return function () { return clearTimeout(timeout_1); };
             }
             else if (currentIndex === textArray.length - 1 && isLoop) {
@@ -32,7 +32,7 @@ var Typewriter = function (_a) {
         return function () {
             // Cleanup if needed
         };
-    }, [currentIndex, currentText, delay, isLoop, loopDelay, text]);
+    }, [currentIndex, currentText, speed, isLoop, loopDelay, text]);
     return react_1["default"].createElement("span", { className: textClassName }, currentText);
 };
 exports["default"] = Typewriter;

@@ -1,7 +1,7 @@
 import React from 'react';
 interface DataProps {
     text?: string | string[];
-    delay?: number;
+    speed?: number;
     isLoop?: boolean;
     loopDelay?: number;
     textClassName?: string;

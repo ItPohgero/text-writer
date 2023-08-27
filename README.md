@@ -36,7 +36,7 @@ import Typewriter from 'react-text-writer'
 | Properti      | Penjelasan                                                            | Default |
 |---------------|-----------------------------------------------------------------------|---------------|
 | text          | String atau Array berisi teks yang akan ditampilkan secara berurutan  | "itpohgero"   |
-| delay         | Waktu tunda (dalam milidetik) antara setiap karakter                  | 100           |
+| speed         | Kecepatan tulis (dalam milidetik) antara setiap karakter              | 100           |
 | isLoop        | Menentukan apakah teks akan diulang setelah selesai                   | false         |
 | loopDelay     | Waktu tunda (dalam milidetik) sebelum pengulangan teks dimulai        | 2000          |
 | className     | Nama kelas CSS untuk mengatur gaya tampilan teks                      | ''            |

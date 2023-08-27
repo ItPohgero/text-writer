@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 
 interface DataProps {
   text?: string | string[]
-  delay?: number
+  speed?: number
   isLoop?: boolean
   loopDelay?: number
   textClassName?: string
@@ -10,7 +10,7 @@ interface DataProps {
 
 const Typewriter: React.FC<DataProps> = ({
   text = 'itpohgero',
-  delay = 100,
+  speed = 100,
   isLoop = false,
   loopDelay = 2000,
   textClassName = '',
@@ -26,7 +26,7 @@ const Typewriter: React.FC<DataProps> = ({
       if (currentTextLength < textArray[currentIndex].length) {
         const timeout = setTimeout(() => {
           setCurrentText((prevText) => prevText + textArray[currentIndex][currentTextLength])
-        }, delay)
+        }, speed)
 
         return () => clearTimeout(timeout)
       } else if (currentIndex === textArray.length - 1 && isLoop) {
@@ -45,7 +45,7 @@ const Typewriter: React.FC<DataProps> = ({
     return () => {
       // Cleanup if needed
     }
-  }, [currentIndex, currentText, delay, isLoop, loopDelay, text])
+  }, [currentIndex, currentText, speed, isLoop, loopDelay, text])
 
   return <span className={textClassName}>{currentText}</span>
 }
