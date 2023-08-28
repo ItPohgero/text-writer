@@ -8,6 +8,7 @@ dengan NPM
 `
 npm i --save react-text-writer
 `
+---
 dengan YARN
 `
 yarn add react-text-writer
@@ -18,18 +19,22 @@ import package
 ```javascript
 import Typewriter from 'react-text-writer'
 // components
-<Typewriter
-    text={
-        [
-        "Kata pertama",
-        "Kata kedua"
-        ]
-    }
-    speed={100}
-    isLoop
-    loopDelay={4000}
-    className="text-slate-800"
-/>
+const Index = () => {
+    return (
+        <Typewriter
+            text={
+                [
+                "Kata pertama",
+                "Kata kedua"
+                ]
+            }
+            speed={100}
+            isLoop
+            loopDelay={4000}
+            textClassName="text-slate-800"
+        />
+    )
+}
 ```
 
 ### Keterangan
@@ -42,8 +47,4 @@ import Typewriter from 'react-text-writer'
 | className     | Nama kelas CSS untuk mengatur gaya tampilan teks                      | ''            |
 
 
-
-Beri dukungan kepada itpohgero.com untuk berkembang.
-Salam hormat dari **wahyu agus arifin**
-
-itpohgero.com
+created by wahyu agus arifin - owner itpohgero.com
