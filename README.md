@@ -5,13 +5,13 @@ Fleksibilitasnya juga kami berikan jika menginginkan text yang ingin kalian munc
 
 ### Cara install
 dengan NPM
-```
+`
 npm i --save react-text-writer
-```
+`
 dengan YARN
-```
+`
 yarn add react-text-writer
-```
+`
 
 ### Cara penggunaan
 import package
