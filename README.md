@@ -4,15 +4,13 @@ Ini adalah package react untuk writer animation text. Tulisan kalian bisa sepert
 Fleksibilitasnya juga kami berikan jika menginginkan text yang ingin kalian munculkan lebih dari satu
 
 ### Cara install
-dengan NPM
-`
-npm i --save react-text-writer
-`
+jika kalian pengguna npm
+`npm i --save react-text-writer`
+
 ---
-dengan YARN
-`
-yarn add react-text-writer
-`
+
+dan jika kalian pengguna yarn
+`yarn add react-text-writer`
 
 ### Cara penggunaan
 import package
