@@ -7,9 +7,7 @@ Fleksibilitasnya juga kami berikan jika menginginkan text yang ingin kalian munc
 jika kalian pengguna npm
 `npm i --save react-text-writer`
 
-</br>
 ---
-</br>
 
 dan jika kalian pengguna yarn
 `yarn add react-text-writer`
